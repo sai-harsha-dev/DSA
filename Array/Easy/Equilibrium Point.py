@@ -30,6 +30,11 @@
 # Solution :-O(N),O(1) 
 # youtube link :- https://www.youtube.com/watch?v=W-t1rjLxvQw&t=238s
 
+# Explanation :- Equilibrium point = left_sum == right_sum
+#                                  = left_sum = total_sum - left_sum
+#                 since  right_sum = total_sum - left_sum
+# Hence we need to find the index where left_sum = total_sum - left_sum
+
 A =[int(i) for i in input().split()]
 N = int(input())
 Total = 0
@@ -43,8 +48,8 @@ else:
     left_sum = A[0]
     Total-=A[0]
     for i in range(1,N-1):
-        Total-=A[i]
-        if Total == left_sum:
+        Total-=A[i] # finds right_sum(right_sum = total- A[i]) at index i 
+        if Total == left_sum: # checks if left_sum = total_sum - left_sum
             print(i+1)
-        left_sum+=A[i]
+        left_sum+=A[i] # Calculstes left sum at each index.
     print(-1)

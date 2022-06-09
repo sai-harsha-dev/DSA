@@ -55,3 +55,23 @@ if len(output) == 0:
 	output.append(-1)        
 	print(output)
 
+# total = 0
+# output = n
+# left = 0
+# right = n-1
+# for i in a:
+# 	total+=i
+# while left <= right:
+# 	if total == x:
+# 		if right-left < output:
+# 			output = right-left
+# 		total-=a[left]
+# 		left+=1
+# 	else:
+# 		if total-a[left] >= x:
+# 			total-=a[left]
+# 			left+=1
+# 		else:
+# 			total-=a[right]
+# 			right-=1
+# return output+1

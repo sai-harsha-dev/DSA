@@ -1,4 +1,8 @@
-# Given an array A of positive integers. Your task is to find the leaders in the array. An element of array is leader if it is greater than or equal to all the elements to its right side. The rightmost element is always a leader. 
+# Given an array A of n positive integers. 
+# Your task is to find the leaders in the array.
+# An element of array is leader if it is greater than
+# or equal to all the elements to its right side. 
+# The rightmost element is always a leader. 
 
 #  	Example 1:
 # 	Input:
@@ -6,8 +10,9 @@
 # 	A[] = {16,17,4,3,5,2}
 
 # 	Output: 17 5 2
-# 	Explanation: The first leader is 17 as it is greater than all the elements to its right.  
-# 	Similarly, the next leader is 5. The right most element is always a leader so it is also included.
+# 	Explanation: The first leader is 17 as it is greater than all 
+#   the elements to its right.Similarly, the next leader is 5.   
+# 	The right most element is always a leader so it is also included.
  
 # 	Example 2:
 # 	Input:
@@ -16,7 +21,7 @@
 
 # 	Output: 4 0
 
-# 	Sol :- O(n),O(n)
+# 	Sol :- O(N),O(N)
 
 A =[int(i) for i in input().split()]
 N = len(A)
