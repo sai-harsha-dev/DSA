@@ -1,9 +1,13 @@
 # Insertion Sort ---> https://www.youtube.com/watch?v=i-SKeOcBwko&t=377s
 
-# Explanation :- The idea is to consider the value other than in those in the 
-#                Iteration range to be unsorted, so everytime if we find an element 
-#                smaller than in the sorted value we push the sorted array element 
-#                by one index.
+# Explanation :-The idea is to consider a part of an array till an index(initially 1)
+#               as being sorted, and then picking the next element to the right and
+#               find out its position in the sorted portion and insert it into that
+#               particular index and extend the sorted array by one index.
+
+# Points to remember :- 1) Sorts right to left
+#                       2) Picks and value and finds it position in sorted array.
+#                       3) Compares the i+1 index value eith value before it.
 
 # Complexity:-O(N^2) - i goes through n-1 Iterations
 #                      j goes through n Iterations

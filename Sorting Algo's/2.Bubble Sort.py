@@ -4,6 +4,10 @@
 #                in every iteration the highest value(maximum)is pushed to the last 
 #                unsorted index to the right.
 
+# Points to remember :- 1) Sorts right to left
+#                       2) Sorts maximum value first
+#                       3) Compares the adjecent index values.
+
 # Complexity :- O(N^2) :-i goes through n-1 Iterations
 #                       j goes through n-1-i Iterations
 #                       Hence :- (n-1)(n-1-i) = n^2+2n+(1-i) = n^2
@@ -19,6 +23,6 @@ for i in range(n-1):           # n-1 since last element needs no comparision
             arr[j] = arr[j+1]
             arr[j+1] = temp
             swap = 1
-    if swap == 0:           # No swap happended menaing elements are already sorted
+    if swap == 0:  # No swap happended menaing adjecent elements are already sorted
         break
 print(arr)

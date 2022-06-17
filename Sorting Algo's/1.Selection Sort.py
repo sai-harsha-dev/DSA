@@ -3,6 +3,10 @@
 # Explanation:-The idea is to start sorting from from starting index and move over to 
 #              the next index so,in every iteration left part of the array gets sorted
 
+# Points to remember :- 1) Sorts left to right
+#                       2) Sorts minimum value first
+#                       3) Compares i th index value with all other index value. 
+
 # Complexity:-O(N^2) - i goes through n-1 Iterations
 #                      j goes through n-1 Iterations
 #                      Hence :- (n-1)(n-1) = n^2+2n+1 = n^2
